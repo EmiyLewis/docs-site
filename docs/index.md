@@ -33,7 +33,7 @@ ESX was initially developed by Gizz back in 2017 for his friend as the were crea
 
 ### Exclusive Features
 
-We have made some exclusive features for extendedmode only, find them all here: ![Functions](functions.md)
+We have made some exclusive features for extendedmode only, find them all here: [Functions](functions/Client Functions.md)
 
 ## Using extendedmode
 

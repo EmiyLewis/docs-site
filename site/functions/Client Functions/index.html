@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Client Functions - extendedmode</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Client Functions";
+    var mkdocs_page_input_path = "functions\\Client Functions.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/lua.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> extendedmode</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">extendedmode</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../legal/">Legal</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Functions</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">Client Functions</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#exmgameplayanim">ExM.Game.PlayAnim</a></li>
+    
+
+    <li class="toctree-l3"><a href="#exmgamecreateped">ExM.Game.CreatePed</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Server Functions/">Server Functions</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">extendedmode</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Functions &raquo;</li>
+        
+      
+    
+    <li>Client Functions</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/extendedmode/extendedmode.github.io/edit/master/docs/functions/Client Functions.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1>Exclusive Functions</h1>
+
+<p>Functions exclusive to the extendedmode framework</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For these functions to work you must be using the extendedmode method of importing functions.
+To do this simply add <code>shared_script '@extendedmode/imports.lua'</code> to your fxmanifest.lua.</p>
+</div>
+<h2 id="exmgameplayanim">ExM.Game.PlayAnim<a class="headerlink" href="#exmgameplayanim" title="Permanent link">&para;</a></h2>
+<pre><code>ExM.Game.PlayAnim(animDict, animName, upperbodyOnly, duration)
+</code></pre>
+
+<p>This function is a quick and easy way to play any animation you want without having to request animation dictionaries or specify a heap of parameters.
+<h3>Parameters</h3></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Data Type</th>
+<th>Optional</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>animDict</td>
+<td>string</td>
+<td>No</td>
+<td>-</td>
+<td>The animation dictionary</td>
+</tr>
+<tr>
+<td>animName</td>
+<td>string</td>
+<td>No</td>
+<td>-</td>
+<td>The animation in the dictionary to play</td>
+</tr>
+<tr>
+<td>upperbodyOnly</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>false</td>
+<td>If you want the animation to only affect the upperbody</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>integer</td>
+<td>Yes</td>
+<td>-1 (full animation)</td>
+<td>Duration in ms you want the animation to run for</td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+
+<pre><code>ExM.Game.PlayAnim(&quot;mini@sprunk&quot;, &quot;plyr_buy_drink_pt1&quot;, false, 1500)
+</code></pre>
+
+<hr />
+<h2 id="exmgamecreateped">ExM.Game.CreatePed<a class="headerlink" href="#exmgamecreateped" title="Permanent link">&para;</a></h2>
+<pre><code>ExM.Game.CreatePed(pedModel, pedCoords, isNetworked, pedType)
+</code></pre>
+
+<p>This function is a quick and easy way to create a ped without having to request models or anything, you can choose whether or not to store the ped in a variable or not.
+<h3>Parameters</h3></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Data Type</th>
+<th>Optional</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pedModel</td>
+<td>hash</td>
+<td>No</td>
+<td>-</td>
+<td>The model of the ped you want to spawn</td>
+</tr>
+<tr>
+<td>pedCoords</td>
+<td>vector</td>
+<td>No</td>
+<td>-</td>
+<td>You can use a vector3 or vector4 here, if only using a vector3 the heading will default to 0.0</td>
+</tr>
+<tr>
+<td>isNetworked</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>false</td>
+<td>If you want the ped to be networked or not</td>
+</tr>
+<tr>
+<td>pedType</td>
+<td>integer</td>
+<td>Yes</td>
+<td>4 (PED_TYPE_CIVMALE)</td>
+<td>The type of ped you want to use. <a href="https://hastebin.com/mecuguxipo">List of Ped Types</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+
+<pre><code>local coords = GetEntityCoords(PlayerPedId())
+local ped = ExM.Game.CreatePed(`a_m_m_acult_01`, vec4(coords.xyz, 180.0), true, 27)
+</code></pre>
+
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Server Functions/" class="btn btn-neutral float-right" title="Server Functions">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../legal/" class="btn btn-neutral" title="Legal"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/extendedmode/extendedmode.github.io/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../legal/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Server Functions/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
