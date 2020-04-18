@@ -67,6 +67,7 @@ While it is recommended that you organise your resources into sub directories, F
 
 ```
 # The included fivem resource needs to be disabled at the moment due to a known issue with mapmanager, this will be fixed soon
+
 #ensure fivem
 
 add_principal group.admin group.user
