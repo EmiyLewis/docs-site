@@ -168,7 +168,7 @@ resolve it.
 **E:** 33155577+Vanheden@users.noreply.github.com
 
 **N:** Vegard Bendiktsen  
-**E:** glitchdetector@gmail.com
+**E:** glitchdetector@gmail.com  
 **D:** glitchdetector#0621
 
 **N:** Viktor  
