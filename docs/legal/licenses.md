@@ -1,10 +1,12 @@
-<h1>Legal</h1>
+<h1>Licenses</h1>
 
-<h2>Licenses</h2>
+-----
 
 <h3>extendedmode - es_extended community fork</h3>
 
 All changes after 04/04/2020 are provided by their respective authors under the GNUGPLv3 license.
+
+-----
 
 <h3>es_extended - EssentialMode Extended framework for FiveM</h3>
 

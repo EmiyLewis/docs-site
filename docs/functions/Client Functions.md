@@ -1,10 +1,13 @@
-<h1>Exclusive Functions</h1>
-Functions exclusive to the extendedmode framework
+<h1>Client Functions</h1>
+
+-----
+
+Client functions exclusive to the extendedmode framework
 
 !!! Note
     For these functions to work you must be using the extendedmode method of importing functions.
 	To do this simply add `shared_script '@extendedmode/imports.lua'` to your fxmanifest.lua.
-
+-----
 ## ExM.Game.PlayAnim
 ```
 ExM.Game.PlayAnim(animDict, animName, upperbodyOnly, duration)
