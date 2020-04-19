@@ -35,14 +35,14 @@ While it is recommended that you organise your resources into sub directories, F
 
 ## Installation
 
+!!! Note
+    Update your server artifact, you must be running server version `2371` or higher
+	Find the latest versions here; [Windows](https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/) or [Linux](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)
+
 - Import `extendedmode.sql` in an SQL database
-- Configure your `server.cfg` like the example below
+- Add the follow items to your `server.cfg`
 
 ```
-# The included fivem resource needs to be disabled at the moment due to a known issue with mapmanager, this will be fixed soon
-
-#ensure fivem
-
 add_principal group.admin group.user
 add_ace resource.extendedmode command.add_ace allow
 add_ace resource.extendedmode command.add_principal allow
