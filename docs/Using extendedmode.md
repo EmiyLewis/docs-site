@@ -35,9 +35,8 @@ While it is recommended that you organise your resources into sub directories, F
 
 ## Installation
 
-!!! IMPORTANT
-    You **must** be running server artifact `2371` or higher  
-	Find the latest artifacts here; [Windows](https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/) or [Linux](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)
+!!! warning
+    You **must** be running server artifact `2371` or higher. Find the latest artifacts here; [Windows](https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/) or [Linux](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)
 
 - Import `extendedmode.sql` in an SQL database
 - Add the follow items to your `server.cfg`
