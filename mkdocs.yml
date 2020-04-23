@@ -1,6 +1,6 @@
 site_name: extendedmode
 docs_dir: docs
-repo_url: https://github.com/extendedmode/extendedmode.github.io
+repo_url: https://github.com/extendedmode/docs-site
 theme:
   name: 'readthedocs'
   prev_next_buttons_location: none
