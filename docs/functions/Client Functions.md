@@ -114,7 +114,7 @@ ExM.Markers.Remove(marker)
 
 ## ExM.Markers.In
 ```lua
-ExM.Markers.Remove(markerVar)
+ExM.Markers.In(markerVar)
 ```
 
 This function is for checking if you're in a marker you previously created with [ExM.Markers.Add](#exmmarkersadd)
