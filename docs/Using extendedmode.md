@@ -119,6 +119,6 @@ If all goes well, you will see the message `[ExtendedMode] [INFO] ExtendedMode h
 ## Troubleshooting
 
 Please make sure that you followed the appropriate guide and that you followed the guide's instructions exactly.  
-If you still can't not working or you are getting errors in your server console, please ask for help in the [ExM Discord](https://discord.gg/qKYBQH8) in the #support channel and be sure to provide as much detail as possible!
+If you still can't not working or you are getting errors in your server console, please ask for help in the [ExM Discord](https://discord.gg/qKYBQH8) in the [#support channel](https://discord.gg/9P4eDgA) and be sure to provide as much detail as possible!
 
 If there are any common things people get stuck on or easily fixed errors, we'll add work arounds here!
