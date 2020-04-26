@@ -14,4 +14,4 @@ extra_css:
 markdown_extensions:
   - admonition
   - toc:
-      permalink: true
+      permalink: "#"

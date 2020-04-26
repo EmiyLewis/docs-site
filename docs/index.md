@@ -22,7 +22,8 @@ ESX was initially developed by Gizz back in 2017 for his friend as the were crea
 ## Links
 
 - [FiveM Forum Thread]() (coming soon!)
-- [ESX Migration Guide]() (coming soon!)
+- [ESX Migration Guide](/Using%20extendedmode/#migration-to-extendedmode)
+- [ExM Discord](https://discord.gg/qKYBQH8)
 - [FiveM Native Reference](https://runtime.fivem.net/doc/reference.html)
 
 -----
