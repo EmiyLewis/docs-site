@@ -14,15 +14,15 @@ Server functions exclusive to the extendedmode framework
 	OneSync Only
 
 ```lua
-ExM.Game.SpawnVehicle(model, coords)
+ExM.Game.SpawnVehicle(vehModel, vehCoords)
 ```
 This function is a quick and easy way to create a vehicle from the server, no model requesting needed as it's serverside. You can choose whether or not to store the vehicle in a variable.
 <h3>Parameters</h3>
 
 | Argument 		| Data Type | Optional 	| Default Value 		| Description |
 | ------------- | --------- | ----------| --------------------- | ----------- |
-| model 		| hash	 	| No 		| - 					| The model of the vehicle you want to create, can be a hash or a string |
-| coords 		| vector3/4	| No 		| - 					| You can use a vector3 or vector4 here, if only using a vector3 the heading will default to 0.0 |
+| vehModel 		| hash	 	| No 		| - 					| The model of the vehicle you want to create, can be a hash or a string |
+| vehCoords 	| vector3/4	| No 		| - 					| You can use a vector3 or vector4 here, if only using a vector3 the heading will default to 0.0 |
 
 <h3>Example</h3>
 ```lua
@@ -59,16 +59,16 @@ local ped = ExM.Game.CreatePed(`a_m_m_acult_01`, coords.xyzw, 27)
 	OneSync Only
 
 ```lua
-ExM.Game.SpawnObject(object, coords, dynamic)
+ExM.Game.SpawnObject(objectModel, objectCoords, isDynamic)
 ```
 This function is a quick and easy way to create an object from the server, no model requesting needed as it's serverside. You can choose whether or not to store the object in a variable.
 <h3>Parameters</h3>
 
 | Argument 		| Data Type | Optional 	| Default Value 		| Description |
 | ------------- | --------- | ----------| --------------------- | ----------- |
-| object 		| hash	 	| No 		| - 					| The model of the object you want to spawn |
-| coords	 	| vector3	| No 		| - 					| The coordinates of where to spawn the object |
-| dynamic 		| boolean 	| Yes 		| true					| If you want the object to be dynamic or not |
+| objectModel 	| hash	 	| No 		| - 					| The model of the object you want to spawn |
+| objectCoords	| vector3	| No 		| - 					| The coordinates of where to spawn the object |
+| isDynamic 	| boolean 	| Yes 		| true					| If you want the object to be dynamic or not |
 
 <h3>Example</h3>
 ```lua
